@@ -7,22 +7,67 @@
 <body>
 
 <div class="container">
-  <h2>Form control: input</h2>
-  <p>The form below contains two input elements; one of type text and one of type password:</p>
+  <h2 >Online Multiple Choice Question Exam </h2>
+  <br><br><br>
+  <!-- 1st q & A block -->
   <form role="form">
-    <div class="form-group">
-      <label for="usr">Name:</label>
-      <input type="text" class="form-control" id="usr">
-      	<div class="form-group">
-		    <label for="exampleInputName2">Name</label>
-		    <input type="text" class="form-inline" id="exampleInputName2" placeholder="Jane Doe">
-	  	</div>
+    <div  class="col-xs-8">
+      <label for="usr">Question 1</label>
+      <input type="text" class="form-control" id="usr" placeholder="Enter your question">
+      	<br>    
+      <div class="col-xs-4">
+        <label for="ex3">Option A</label>
+        <input  class="form-control" id="ex3" type="text" placeholder="Enter Option">
+        
+      </div>
+      <div class="col-xs-4">
+        <label for="ex3">Option B</label>
+        <input  class="form-control" id="ex3" type="text" placeholder="Enter Option">
+      </div>
+      <br><br><br>
+      <div class="col-xs-4">
+        <label for="ex3">Option C</label>
+        <input  class="form-control" id="ex3" type="text" placeholder="Enter Option">
+      </div>
+      <div class="col-xs-4">
+        <label for="ex3">Option D</label>
+        <input  class="form-control" id="ex3" type="text" placeholder="Enter Option">
+      </div>  
     </div>
-    <div class="form-group">
-      <label for="usr">Name:</label>
-      <input type="text" class="form-control" id="usr">
+   <br><br><br>
+     <!-- Q & A block end-->
+       <!-- 1st q & A block -->
+
+    <div  class="col-xs-8">
+      <label for="usr">Question 1</label>
+      <input type="text" class="form-control" id="usr" placeholder="Enter your question">
+      	<br>    
+      <div class="col-xs-4">
+        <label for="ex3">Option A</label>
+        <input  class="form-control" id="ex3" type="text" placeholder="Enter Option">
+        
+      </div>
+      <div class="col-xs-4">
+        <label for="ex3">Option B</label>
+        <input  class="form-control" id="ex3" type="text" placeholder="Enter Option">
+      </div>
+      <br><br><br>
+      <div class="col-xs-4">
+        <label for="ex3">Option C</label>
+        <input  class="form-control" id="ex3" type="text" placeholder="Enter Option">
+      </div>
+      <div class="col-xs-4">
+        <label for="ex3">Option D</label>
+        <input  class="form-control" id="ex3" type="text" placeholder="Enter Option">
+      </div>  
     </div>
-  </form>
+   </form>
+     <!-- Q & A block end-->
+
+
+   
+
+ 
 </div>
 
 </body>
