@@ -584,6 +584,18 @@
 
   <!--Finishing of a question-->
 
+  <br><br>
+
+  <!--For submit button-->
+  <form class="form-inline" role="form">
+  	 <div class="form-group"> 
+   
+      <button type="button" class="btn btn-primary">Submit</button>  
+    
+  </div>
+  </form>
+
+
 <!-- PHP SEction -->
 <?php
 $servername = "localhost";
@@ -626,9 +638,9 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
+
+
 </div>
-
-
 
 </body>
 </html>
