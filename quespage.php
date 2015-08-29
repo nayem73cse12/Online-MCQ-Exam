@@ -13,30 +13,10 @@
     <div class="form-group">
       <label for="usr">Name:</label>
       <input type="text" class="form-control" id="usr">
-    </div>
-    <div class="form-group">
-      <label for="usr">Name:</label>
-      <input type="text" class="form-control" id="usr">
-    </div>
-    <div class="form-group">
-      <label for="usr">Name:</label>
-      <input type="text" class="form-control" id="usr">
-    </div>
-    <div class="form-group">
-      <label for="usr">Name:</label>
-      <input type="text" class="form-control" id="usr">
-    </div>
-    <div class="form-group">
-      <label for="usr">Name:</label>
-      <input type="text" class="form-control" id="usr">
-    </div>
-    <div class="form-group">
-      <label for="usr">Name:</label>
-      <input type="text" class="form-control" id="usr">
-    </div>
-    <div class="form-group">
-      <label for="usr">Name:</label>
-      <input type="text" class="form-control" id="usr">
+      	<div class="form-group">
+		    <label for="exampleInputName2">Name</label>
+		    <input type="text" class="form-inline" id="exampleInputName2" placeholder="Jane Doe">
+	  	</div>
     </div>
     <div class="form-group">
       <label for="usr">Name:</label>
