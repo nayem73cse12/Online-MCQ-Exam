@@ -588,13 +588,13 @@
   <br><br>
 
   <!--For submit button-->
-  <form class="form-inline" role="form">
+  <div class="form-inline" role="form">
   	 <div class="form-group"> 
    
       <button type="button" class="btn btn-primary">Submit</button>  
     
   </div>
-  </form>
+  </div>
   </form>
 
 
