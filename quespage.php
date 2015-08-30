@@ -12,8 +12,8 @@
   <!-- 1st q & A block -->
   <form role="form">
     <div  class="col-xs-8">
-      <label for="usr">Question 1</label>
-      <input type="text" class="form-control" id="usr" placeholder="Enter your question">
+      <label for="q1">Question 1</label>
+      <input type="text" class="form-control" id="usr" name="q1" placeholder="Enter your question">
       	<br>    
       <div class="col-xs-4">
         <label for="ex3">Option A</label>
