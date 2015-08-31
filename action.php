@@ -12,7 +12,7 @@ $q10 = $_POST['q10'];
 // options 
 $q1o2 = $_POST['q1o2'];
 $q2o2 = $_POST['q2o2'];
-$q3o2 = $_POST['q302'];
+$q3o2 = $_POST['q3o2'];
 $q4o2 = $_POST['q4o2'];
 $q5o2 = $_POST['q5o2'];
 $q6o2 = $_POST['q6o2'];
@@ -20,9 +20,10 @@ $q7o2 = $_POST['q7o2'];
 $q8o2 = $_POST['q8o2'];
 $q9o2 = $_POST['q9o2'];
 $q10o2 = $_POST['q10o2'];
+
 $q1o1 = $_POST['q1o1'];
 $q2o1 = $_POST['q2o1'];
-$q3o1 = $_POST['q301'];
+$q3o1 = $_POST['q3o1'];
 $q4o1 = $_POST['q4o1'];
 $q5o1 = $_POST['q5o1'];
 $q6o1 = $_POST['q6o1'];
@@ -33,7 +34,7 @@ $q10o1 = $_POST['q10o1'];
                                                                                 // developed by Masiur Rahman Siddiki , mrsiddiki@gmail.com // sust cse 2012 batch 
 $q1o3 = $_POST['q1o3'];
 $q2o3 = $_POST['q2o3'];
-$q3o3 = $_POST['q303'];
+$q3o3 = $_POST['q3o3'];
 $q4o3 = $_POST['q4o3'];
 $q5o3 = $_POST['q5o3'];
 $q6o3 = $_POST['q6o3'];
@@ -41,9 +42,10 @@ $q7o3 = $_POST['q7o3'];
 $q8o3 = $_POST['q8o3'];
 $q9o3 = $_POST['q9o3'];
 $q10o3 = $_POST['q10o3'];
+
 $q1o4 = $_POST['q1o4'];
 $q2o4 = $_POST['q2o4'];
-$q3o4 = $_POST['q304'];
+$q3o4 = $_POST['q3o4'];
 $q4o4 = $_POST['q4o4'];
 $q5o4 = $_POST['q5o4'];
 $q6o4 = $_POST['q6o4'];
@@ -70,7 +72,24 @@ if ($conn->query($sql) === TRUE) {
     echo "Error creating database: " . $conn->error;
 }
 */
+
+// Database connection 
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "onlinemcq";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+
 // sql to create table
+
 $sql1 = "CREATE TABLE questions (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
 ques VARCHAR(255) NOT NULL,
@@ -84,19 +103,27 @@ reg_date TIMESTAMP
 // sql to insert data into database table 
 $sql2 = "INSERT INTO questions (ques, opt1, opt2, opt3, opt4, correct_opt)
 VALUES ('$q1', '$q1o1', '$q1o2', '$q1o3', '$q1o4', '$q1c' ),
-       ('$q1', '$q1o1', '$q1o2', '$q1o3', '$q1o4', '$q1c' ),
-       ('$q1', '$q1o1', '$q1o2', '$q1o3', '$q1o4', '$q1c' )
-       ('$q1', '$q1o1', '$q1o2', '$q1o3', '$q1o4', '$q1c' )
-       ('$q1', '$q1o1', '$q1o2', '$q1o3', '$q1o4', '$q1c' )
-       ('$q1', '$q1o1', '$q1o2', '$q1o3', '$q1o4', '$q1c' )
-       ('$q1', '$q1o1', '$q1o2', '$q1o3', '$q1o4', '$q1c' )
-       ('$q1', '$q1o1', '$q1o2', '$q1o3', '$q1o4', '$q1c' )
-       ('$q1', '$q1o1', '$q1o2', '$q1o3', '$q1o4', '$q1c' )
-       ('$q1', '$q1o1', '$q1o2', '$q1o3', '$q1o4', '$q1c' )";
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
+       ('$q2', '$q2o1', '$q2o2', '$q2o3', '$q2o4', '$q2c' ),
+       ('$q3', '$q3o1', '$q3o2', '$q3o3', '$q3o4', '$q3c' )
+       ('$q4', '$q4o1', '$q4o2', '$q4o3', '$q4o4', '$q4c' )
+       ('$q5', '$q5o1', '$q5o2', '$q5o3', '$q5o4', '$q5c' )
+       ('$q6', '$q6o1', '$q6o2', '$q6o3', '$q6o4', '$q6c' )
+       ('$q7', '$q7o1', '$q7o2', '$q7o3', '$q7o4', '$q7c' )
+       ('$q8', '$q8o1', '$q8o2', '$q8o3', '$q8o4', '$q8c' )
+       ('$q9', '$q9o1', '$q9o2', '$q9o3', '$q9o4', '$q9c' )
+       ('$q10', '$q10o1', '$q10o2', '$q10o3', '$q10o4', '$q10c' )";
+
+if ($conn->query($sql2) === TRUE) {
+  echo "Record Created Successfully";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
+/*
+if ( $conn->query($sql1) === TRUE ) {
+    
+  } else {
+    echo"database or table not found";
+  }
+  */
 $conn->close();
 ?>
