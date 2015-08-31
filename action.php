@@ -118,12 +118,12 @@ if ($conn->query($sql2) === TRUE) {
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
-/*
+
 if ( $conn->query($sql1) === TRUE ) {
     
   } else {
     echo"database or table not found";
   }
-  */
+  
 $conn->close();
 ?>
