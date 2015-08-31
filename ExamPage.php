@@ -16,7 +16,7 @@
 
 
 <!--Form starting-->
-  <form role="form">
+  <form role="form" method="POST" action="action.php">
     <div class="form-group">
  
  <!--Question 1 starting-->
@@ -26,27 +26,27 @@
       </div>
       <label></label>
      <div class="col-xs-3">
-     <input type="checkbox" value="A">
+     <input type="radio" name="q1c" value="A">
         <label for="option">Option 1:</label>
         <input class="form-control" id="q1o1" name="q1o1" type="text">
       </div>
       <div class="col-xs-3">
-      <input type="checkbox" value="B">
+      <input type="radio" value="B" name="q1c">
         <label for="option">Option 2:</label>
         <input class="form-control" id="q1o2" name="q1o2" type="text">
       </div>
       <div class="col-xs-3">
-       <input type="checkbox" value="C">
+       <input type="radio" value="C" name="q1c">
         <label for="option">Option 3:</label>
         <input class="form-control" id="q1o3" name="q1o3" type="text">
       </div>
 
       <div class="col-xs-3">
-      <input type="checkbox" value="D">
+      <input type="radio" value="D" name="q1c">
         <label for="option">Option 4:</label>
         <input class="form-control" id="q1o4" name="q1o4" type="text">
       </div>
-    </div>
+    
     
     <!--Question 1 finishing-->
 
@@ -59,23 +59,23 @@
       </div>
       <label></label>
      <div class="col-xs-3">
-     <input type="checkbox" value="A">
+     <input type="checkbox" value="A" name="q2c">
         <label for="option">Option 1:</label>
         <input class="form-control" id="q2o1" name="q2o1" type="text">
       </div>
       <div class="col-xs-3">
-      <input type="checkbox" value="B">
+      <input type="checkbox" value="B" name="q2c">
         <label for="option">Option 2:</label>
         <input class="form-control" id="q2o2" name="q2o2" type="text">
       </div>
       <div class="col-xs-3">
-       <input type="checkbox" value="C">
+       <input type="checkbox" value="C" name="q2c">
         <label for="option">Option 3:</label>
         <input class="form-control" id="q2o3" name="q2o3" type="text">
       </div>
 
       <div class="col-xs-3">
-      <input type="checkbox" value="D">
+      <input type="checkbox" value="D" name="q2c">
         <label for="option">Option 4:</label>
         <input class="form-control" id="q2o4" name="q2o4" type="text">
       </div>
@@ -92,23 +92,23 @@
       </div>
       <label></label>
      <div class="col-xs-3">
-     <input type="checkbox" value="A">
+     <input type="checkbox" value="A" name="q3c">
         <label for="option">Option 1:</label>
         <input class="form-control" id="q3o1" name="q3o1" type="text">
       </div>
       <div class="col-xs-3">
-      <input type="checkbox" value="B">
+      <input type="checkbox" value="B" name="q3c">
         <label for="option">Option 2:</label>
         <input class="form-control" id="q3o2" name="q3o2" type="text">
       </div>
       <div class="col-xs-3">
-       <input type="checkbox" value="C">
+       <input type="checkbox" value="C" name="q3c">
         <label for="option">Option 3:</label>
         <input class="form-control" id="q3o3" name="q3o3" type="text">
       </div>
 
       <div class="col-xs-3">
-      <input type="checkbox" value="D">
+      <input type="checkbox" value="D" name="q3c">
         <label for="option">Option 4:</label>
         <input class="form-control" id="q3o4" name="q3o4" type="text">
       </div>
@@ -125,23 +125,23 @@
       </div>
       <label></label>
      <div class="col-xs-3">
-     <input type="checkbox" value="A">
+     <input type="checkbox" value="A" name="q4c">
         <label for="option">Option 1:</label>
         <input class="form-control" id="q4o1" name="q4o1" type="text">
       </div>
       <div class="col-xs-3">
-      <input type="checkbox" value="B">
+      <input type="checkbox" value="B" name="q4c">
         <label for="option">Option 2:</label>
         <input class="form-control" id="q4o2" name="q4o2" type="text">
       </div>
       <div class="col-xs-3">
-       <input type="checkbox" value="C">
+       <input type="checkbox" value="C" name="q4c">
         <label for="option">Option 3:</label>
         <input class="form-control" id="q4o3" name="q4o3" type="text">
       </div>
 
       <div class="col-xs-3">
-      <input type="checkbox" value="D">
+      <input type="checkbox" value="D" name="q4c">
         <label for="option">Option 4:</label>
         <input class="form-control" id="q4o4" name="q4o4" type="text">
       </div>
@@ -158,23 +158,23 @@
       </div>
       <label></label>
      <div class="col-xs-3">
-     <input type="checkbox" value="A">
+     <input type="checkbox" value="A" name="q5c">
         <label for="option">Option 1:</label>
         <input class="form-control" id="q5o1" name="q5o1" type="text">
       </div>
       <div class="col-xs-3">
-      <input type="checkbox" value="B">
+      <input type="checkbox" value="B" name="q5c">
         <label for="option">Option 2:</label>
         <input class="form-control" id="q5o2" name="q5o2" type="text">
       </div>
       <div class="col-xs-3">
-       <input type="checkbox" value="C">
+       <input type="checkbox" value="C" name="q5c">
         <label for="option">Option 3:</label>
         <input class="form-control" id="q5o3" name="q5o3" type="text">
       </div>
 
       <div class="col-xs-3">
-      <input type="checkbox" value="D">
+      <input type="checkbox" value="D" name="q5c">
         <label for="option">Option 4:</label>
         <input class="form-control" id="q5o4" name="q5o4" type="text">
       </div>
@@ -191,23 +191,23 @@
       </div>
       <label></label>
      <div class="col-xs-3">
-     <input type="checkbox" value="A">
+     <input type="checkbox" value="A" name="q6c">
         <label for="option">Option 1:</label>
         <input class="form-control" id="q6o1" name="q6o1" type="text">
       </div>
       <div class="col-xs-3">
-      <input type="checkbox" value="B">
+      <input type="checkbox" value="B" name="q6c">
         <label for="option">Option 2:</label>
         <input class="form-control" id="q6o2" name="q6o2" type="text">
       </div>
       <div class="col-xs-3">
-       <input type="checkbox" value="C">
+       <input type="checkbox" value="C" name="q6c">
         <label for="option">Option 3:</label>
         <input class="form-control" id="q6o3" name="q6o3" type="text">
       </div>
 
       <div class="col-xs-3">
-      <input type="checkbox" value="D">
+      <input type="checkbox" value="D" name="q6c">
         <label for="option">Option 4:</label>
         <input class="form-control" id="q6o4" name="q6o4" type="text">
       </div>
@@ -224,23 +224,23 @@
       </div>
       <label></label>
      <div class="col-xs-3">
-     <input type="checkbox" value="A">
+     <input type="checkbox" value="A" name="q7c">
         <label for="option">Option 1:</label>
         <input class="form-control" id="q7o1" name="q7o1" type="text">
       </div>
       <div class="col-xs-3">
-      <input type="checkbox" value="B">
+      <input type="checkbox" value="B" name="q7c">
         <label for="option">Option 2:</label>
         <input class="form-control" id="q7o2" name="q7o2" type="text">
       </div>
       <div class="col-xs-3">
-       <input type="checkbox" value="C">
+       <input type="checkbox" value="C" name="q7c">
         <label for="option">Option 3:</label>
         <input class="form-control" id="q7o3" name="q7o3" type="text">
       </div>
 
       <div class="col-xs-3">
-      <input type="checkbox" value="D">
+      <input type="checkbox" value="D" name="q7c">
         <label for="option">Option 4:</label>
         <input class="form-control" id="q7o4" name="q7o4" type="text">
       </div>
@@ -257,23 +257,23 @@
       </div>
       <label></label>
      <div class="col-xs-3">
-     <input type="checkbox" value="A">
+     <input type="checkbox" value="A" name="q8c">
         <label for="option">Option 1:</label>
         <input class="form-control" id="q8o1" name="q8o1" type="text">
       </div>
       <div class="col-xs-3">
-      <input type="checkbox" value="B">
+      <input type="checkbox" value="B" name="q8c">
         <label for="option">Option 2:</label>
         <input class="form-control" id="q8o2" name="q8o2" type="text">
       </div>
       <div class="col-xs-3">
-       <input type="checkbox" value="C">
+       <input type="checkbox" value="C" name="q8c">
         <label for="option">Option 3:</label>
         <input class="form-control" id="q8o3" name="q8o3" type="text">
       </div>
 
       <div class="col-xs-3">
-      <input type="checkbox" value="D">
+      <input type="checkbox" value="D" name="q8c">
         <label for="option">Option 4:</label>
         <input class="form-control" id="q8o4" name="q8o4" type="text">
       </div>
@@ -290,23 +290,23 @@
       </div>
       <label></label>
      <div class="col-xs-3">
-     <input type="checkbox" value="A">
+     <input type="checkbox" value="A" name="q9c">
         <label for="option">Option 1:</label>
         <input class="form-control" id="q9o1" name="q9o1" type="text">
       </div>
       <div class="col-xs-3">
-      <input type="checkbox" value="B">
+      <input type="checkbox" value="B" name="q9c">
         <label for="option">Option 2:</label>
         <input class="form-control" id="q9o2" name="q9o2" type="text">
       </div>
       <div class="col-xs-3">
-       <input type="checkbox" value="C">
+       <input type="checkbox" value="C" name="q9c">
         <label for="option">Option 3:</label>
         <input class="form-control" id="q9o3" name="q9o3" type="text">
       </div>
 
       <div class="col-xs-3">
-      <input type="checkbox" value="D">
+      <input type="checkbox" value="D" name="q9c">
         <label for="option">Option 4:</label>
         <input class="form-control" id="q9o4" name="q9o4" type="text">
       </div>
@@ -323,33 +323,49 @@
       </div>
       <label></label>
      <div class="col-xs-3">
-     <input type="checkbox" value="A">
+     <input type="checkbox" value="A" name="q10c">
         <label for="option">Option 1:</label>
         <input class="form-control" id="q10o1" name="q10o1" type="text">
       </div>
       <div class="col-xs-3">
-      <input type="checkbox" value="B">
+      <input type="checkbox" value="B" name="q10c">
         <label for="option">Option 2:</label>
         <input class="form-control" id="q10o2" name="q10o2" type="text">
       </div>
       <div class="col-xs-3">
-       <input type="checkbox" value="C">
+       <input type="checkbox" value="C" name="q10c">
         <label for="option">Option 3:</label>
         <input class="form-control" id="q10o3" name="q10o3" type="text">
       </div>
 
       <div class="col-xs-3">
-      <input type="checkbox" value="D">
+      <input type="checkbox" value="D" name="q10c">
         <label for="option">Option 4:</label>
         <input class="form-control" id="q10o4" name="q10o4" type="text">
       </div>
-
     </div>
     
     <!--Question 10 finishing-->
 
+    <label for="submit"></label>
+    <div>
+      <input type="submit" class="btn btn-primary btn-lg" value="SUBMIT YOUR DATA">
+    </div>
   </form>
+
+  <!-- form ended here --> 
 </div>
+<!-- footer code --> 
+<footer>
+        <div align="center">
+       <div  >
+                <p></p>       
+                <small class="copyright">Developed By <strong>Masiur Rahman Siddiki & Abu Hanife Nayem</strong></br> Department of <b style="color:black">C</b>omputer <b style="color:black">S</b>cience and <b style="color:black">E</b>ngineering, <b style="color:black">S</b>hahjalal <b style="color:black">U</b>niversity of <b style="color:black">S</b>cience and <b style="color:black">T</b>echnology, Sylhet</small>
+
+      </div>
+    </div>
+</footer>
+
 
 </body>
 </html>
