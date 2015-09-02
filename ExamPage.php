@@ -349,7 +349,7 @@
 
     <label for="submit"></label>
     <div>
-      <input type="submit" class="btn btn-primary btn-lg" value="SUBMIT YOUR DATA">
+      <input type="submit" name='submit' class="btn btn-primary btn-lg" value="SUBMIT YOUR DATA">
     </div>
   </form>
 

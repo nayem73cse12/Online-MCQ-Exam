@@ -1,69 +1,71 @@
 <?php
-$q1 = $_POST['q1'];
-$q2 = $_POST['q2'];
-$q3 = $_POST['q3'];
-$q4 = $_POST['q4'];
-$q5 = $_POST['q5'];
-$q6 = $_POST['q6'];
-$q7 = $_POST['q7'];
-$q8 = $_POST['q8'];
-$q9 = $_POST['q9'];
-$q10 = $_POST['q10'];
-// options 
-$q1o2 = $_POST['q1o2'];
-$q2o2 = $_POST['q2o2'];
-$q3o2 = $_POST['q3o2'];
-$q4o2 = $_POST['q4o2'];
-$q5o2 = $_POST['q5o2'];
-$q6o2 = $_POST['q6o2'];
-$q7o2 = $_POST['q7o2'];
-$q8o2 = $_POST['q8o2'];
-$q9o2 = $_POST['q9o2'];
-$q10o2 = $_POST['q10o2'];
+if (isset($_POST['submit'])) {
+  $q1 = $_POST['q1'];
+  $q2 = $_POST['q2'];
+  $q3 = $_POST['q3'];
+  $q4 = $_POST['q4'];
+  $q5 = $_POST['q5'];
+  $q6 = $_POST['q6'];
+  $q7 = $_POST['q7'];
+  $q8 = $_POST['q8'];
+  $q9 = $_POST['q9'];
+  $q10 = $_POST['q10'];
+  // options 
+  $q1o2 = $_POST['q1o2'];
+  $q2o2 = $_POST['q2o2'];
+  $q3o2 = $_POST['q3o2'];
+  $q4o2 = $_POST['q4o2'];
+  $q5o2 = $_POST['q5o2'];
+  $q6o2 = $_POST['q6o2'];
+  $q7o2 = $_POST['q7o2'];
+  $q8o2 = $_POST['q8o2'];
+  $q9o2 = $_POST['q9o2'];
+  $q10o2 = $_POST['q10o2'];
 
-$q1o1 = $_POST['q1o1'];
-$q2o1 = $_POST['q2o1'];
-$q3o1 = $_POST['q3o1'];
-$q4o1 = $_POST['q4o1'];
-$q5o1 = $_POST['q5o1'];
-$q6o1 = $_POST['q6o1'];
-$q7o1 = $_POST['q7o1'];
-$q8o1 = $_POST['q8o1'];
-$q9o1 = $_POST['q9o1'];
-$q10o1 = $_POST['q10o1'];
-                                                                                // developed by Masiur Rahman Siddiki , mrsiddiki@gmail.com // sust cse 2012 batch 
-$q1o3 = $_POST['q1o3'];
-$q2o3 = $_POST['q2o3'];
-$q3o3 = $_POST['q3o3'];
-$q4o3 = $_POST['q4o3'];
-$q5o3 = $_POST['q5o3'];
-$q6o3 = $_POST['q6o3'];
-$q7o3 = $_POST['q7o3'];
-$q8o3 = $_POST['q8o3'];
-$q9o3 = $_POST['q9o3'];
-$q10o3 = $_POST['q10o3'];
+  $q1o1 = $_POST['q1o1'];
+  $q2o1 = $_POST['q2o1'];
+  $q3o1 = $_POST['q3o1'];
+  $q4o1 = $_POST['q4o1'];
+  $q5o1 = $_POST['q5o1'];
+  $q6o1 = $_POST['q6o1'];
+  $q7o1 = $_POST['q7o1'];
+  $q8o1 = $_POST['q8o1'];
+  $q9o1 = $_POST['q9o1'];
+  $q10o1 = $_POST['q10o1'];
+                                                                                  // developed by Masiur Rahman Siddiki , mrsiddiki@gmail.com // sust cse 2012 batch 
+  $q1o3 = $_POST['q1o3'];
+  $q2o3 = $_POST['q2o3'];
+  $q3o3 = $_POST['q3o3'];
+  $q4o3 = $_POST['q4o3'];
+  $q5o3 = $_POST['q5o3'];
+  $q6o3 = $_POST['q6o3'];
+  $q7o3 = $_POST['q7o3'];
+  $q8o3 = $_POST['q8o3'];
+  $q9o3 = $_POST['q9o3'];
+  $q10o3 = $_POST['q10o3'];
 
-$q1o4 = $_POST['q1o4'];
-$q2o4 = $_POST['q2o4'];
-$q3o4 = $_POST['q3o4'];
-$q4o4 = $_POST['q4o4'];
-$q5o4 = $_POST['q5o4'];
-$q6o4 = $_POST['q6o4'];
-$q7o4 = $_POST['q7o4'];
-$q8o4 = $_POST['q8o4'];
-$q9o4 = $_POST['q9o4'];
-$q10o4 = $_POST['q10o4'];
-// correct_options 
-$q1c = $_POST['q1c'];
-$q2c = $_POST['q2c'];
-$q3c = $_POST['q3c'];
-$q4c = $_POST['q4c'];
-$q5c = $_POST['q5c'];
-$q6c = $_POST['q6c'];
-$q7c = $_POST['q7c'];
-$q8c = $_POST['q8c'];
-$q9c = $_POST['q9c'];
-$q10c = $_POST['q10c'];
+  $q1o4 = $_POST['q1o4'];
+  $q2o4 = $_POST['q2o4'];
+  $q3o4 = $_POST['q3o4'];
+  $q4o4 = $_POST['q4o4'];
+  $q5o4 = $_POST['q5o4'];
+  $q6o4 = $_POST['q6o4'];
+  $q7o4 = $_POST['q7o4'];
+  $q8o4 = $_POST['q8o4'];
+  $q9o4 = $_POST['q9o4'];
+  $q10o4 = $_POST['q10o4'];
+  // correct_options 
+  $q1c = $_POST['q1c'];
+  $q2c = $_POST['q2c'];
+  $q3c = $_POST['q3c'];
+  $q4c = $_POST['q4c'];
+  $q5c = $_POST['q5c'];
+  $q6c = $_POST['q6c'];
+  $q7c = $_POST['q7c'];
+  $q8c = $_POST['q8c'];
+  $q9c = $_POST['q9c'];
+  $q10c = $_POST['q10c'];
+}
 /* Create database
 $sql = "CREATE DATABASE myDB";
 if ($conn->query($sql) === TRUE) {
