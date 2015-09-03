@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Online MCQ Exam || Question Setter Panel </title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <title>Online MCQ Exam || Question Setter Panel </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
  <!--Question 1 starting-->
      <div>
         <label for="q1">Question 1:</label>
-        <input class="form-control input-lg" id="q1" name="q1" type="text">
+        <input class="form-control input-lg" id="q1" name="q1" type="text" required>
       </div>
       <label></label>
      <div class="col-xs-3">
@@ -349,7 +349,7 @@
 
     <label for="submit"></label>
     <div>
-      <input type="submit" name='submit' class="btn btn-primary btn-lg" value="SUBMIT YOUR DATA">
+      <input type="submit" class="btn btn-primary btn-lg" value="SUBMIT YOUR DATA">
     </div>
   </form>
 
