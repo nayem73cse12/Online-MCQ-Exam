@@ -83,8 +83,8 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 // sql to create table
-/*
-$sql1 = "CREATE TABLE questions4 (
+
+/*$sql2 = "CREATE TABLE questions4 (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
 ques VARCHAR(255) NOT NULL,
 opt1 VARCHAR(200),
@@ -92,8 +92,8 @@ opt2 VARCHAR(200),
 opt3 VARCHAR(200),
 opt4 VARCHAR(200),
 correct_opt VARCHAR(30)
-)";
-*/
+)";*/
+
 // sql to insert data into database table 
 $sql2 = "INSERT INTO questions4 (ques, opt1, opt2, opt3, opt4, correct_opt)
 VALUES ('$q1', '$q1o1', '$q1o2', '$q1o3', '$q1o4', '$q1c' ),
