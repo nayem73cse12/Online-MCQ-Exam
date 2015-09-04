@@ -34,7 +34,7 @@ if ($result->num_rows > 0) {
  //   echo "<table><tr><th>ID</th><th>Questions</th><th>1st Option</th><th>2nd Option</th><th>3rd 		//	Option</th><th>4rth Option</th></tr>";
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "  ".$row["id"]." ".$row["ques"]."<br>". '<input type="radio" value="A" name="q1a">' .$row["opt1"]. "<br>".'<input type="radio" value="B" name="q1a">' .$row["opt2"]."<br>".'<input type="radio" value="C" name="q1a">'.$row["opt3"]."<br>".'<input type="radio" value="D" name="q1a">'.$row["opt4"]. "<br>";
+        echo '<h4 class="text-primary">'.$row["id"]." ".$row["ques"].'</h4>'. '<div class="radio"><input type="radio" value="A" name="q.$row["id"].a">' .$row["opt1"]. "<br>".'<input type="radio" value="B" name="q1a">' .$row["opt2"]."<br>".'<input type="radio" value="C" name="q1a">'.$row["opt3"]."<br>".'<input type="radio" value="D" name="q1a">'.$row["opt4"]. "</div><br>";
     }
     echo "</table>";
 } else {
