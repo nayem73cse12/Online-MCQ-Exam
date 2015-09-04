@@ -7,6 +7,8 @@
 <body>
 <div class="container">
 
+<form method='post' action='input.php'>
+
 
 <?php
 $servername = "localhost";
@@ -22,12 +24,9 @@ if ($conn->connect_error) {
 } 
 
 
-$sql = "SELECT id, ques, opt1, opt2, opt3, opt4 FROM questions4";
+$sql1 = "SELECT id, ques, opt1, opt2, opt3, opt4 FROM questions4";
 
-
-
-
-$result = $conn->query($sql);
+$result = $conn->query($sql1);
 /*
 $sql = "SELECT id, firstname, lastname FROM MyGuests"; */
 if ($result->num_rows > 0) {
@@ -42,12 +41,18 @@ if ($result->num_rows > 0) {
 			    echo "<input type='radio' value='C' name='q".$row['id']."a'>".$row['opt3'].".<br>";
 			    echo "<input type='radio' value='D' name='q".$row['id']."a'>".$row['opt4'].".<br>";
 		echo  "</div>";
-    }
+		
+    } 
 } else {
     echo "0 results";
 }
+
+
 $conn->close();
+
 ?>
+<input class='btn btn-primary' type='submit' value='submit'>
+</form>
 
 </div>
 </body>
