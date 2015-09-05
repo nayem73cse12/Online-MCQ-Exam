@@ -21,14 +21,9 @@
 
 	    // correct asnwers 
 
-	/*
-	$sql = "CREATE TABLE userans (
-				id INT(3) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
-				user_ans VARCHAR(4) NOT NULL,
-				opt1 VARCHAR(200),
-				correct_opt VARCHAR(30)
-			)";
-	*/
+
+	
+	
 
    
 	// Create connection
@@ -37,6 +32,30 @@
 	if ($conn->connect_error) {
 	    die("Connection failed: " . $conn->connect_error);
 	}
+
+	
+	$sql5 = "DROP TABLE userans";
+    mysql_select_db( 'onlinemcq' );
+    if ($conn->query($sql5) === TRUE) {
+    echo "";
+    } else {
+    echo "Error deleting record: " . $conn->error;
+    }
+
+
+
+    $sql = "CREATE TABLE userans (
+				id INT(3) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+				user_ans VARCHAR(4) NOT NULL,
+				opt1 VARCHAR(200),
+				correct_opt VARCHAR(30)
+			)";
+    if ($conn->query($sql) === TRUE) {
+    echo "";
+    } else {
+    echo "Error creating table: " . $conn->error;
+    }
+	
 
 	$sql = "SELECT  correct_opt FROM questions";
     $result = $conn->query($sql);
@@ -67,7 +86,7 @@
 	$qc10 = $qc[10];
 
 
-/*
+
     $sql3="INSERT INTO userans (user_ans,correct_opt)
      VALUES ('$q1a','$qc1'),
             ('$q2a','$qc2'),
@@ -81,10 +100,10 @@
             ('$q10a','$qc10')";
 
        if ($conn->query($sql3) === TRUE) {
-       echo "Record Created Successfully";
+       echo "";
        } else {
        echo "Error: " . $sql3 . "<br>" . $conn->error;
-       }*/
+       }
 
     $sql4 = "SELECT  user_ans,correct_opt FROM userans";
     $result4 = $conn->query($sql4);
