@@ -22,13 +22,24 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "onlinemcq";
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
+<<<<<<< HEAD
 $sql = "SELECT id, ques, opt1, opt2, opt3, opt4 FROM questions4";
+=======
+
+
+$sql = "SELECT id, ques, opt1, opt2, opt3, opt4 FROM questions4";
+
+>>>>>>> master
 $result = $conn->query($sql);
 /*
 $sql = "SELECT id, firstname, lastname FROM MyGuests"; */
@@ -49,7 +60,14 @@ if ($result->num_rows > 0) {
 } else {
     echo "0 results";
 }
+<<<<<<< HEAD
 $conn->close();
+=======
+
+
+$conn->close();
+
+>>>>>>> master
 ?>
 <input class='btn btn-primary' type='submit' value='submit'>
 </form>
