@@ -28,14 +28,17 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
-$sql = "SELECT id, ques, opt1, opt2, opt3, opt4 FROM questions4";
+$sql = "SELECT id, ques, opt1, opt2, opt3, opt4, correct_opt FROM questions";
 $result = $conn->query($sql);
 /*
 $sql = "SELECT id, firstname, lastname FROM MyGuests"; */
 if ($result->num_rows > 0) {
  //   echo "<table><tr><th>ID</th><th>Questions</th><th>1st Option</th><th>2nd Option</th><th>3rd 		//	Option</th><th>4rth Option</th></tr>";
     // output data of each row
+  
     while($row = $result->fetch_assoc()) {
+
+    	
         echo "<div class='form-group'><div class='col-lg-10'><h4 class='text-primary'>".$row['id'].". ".$row['ques']."</h4>";
       
 		echo  "<div class='radio'>";
@@ -44,6 +47,8 @@ if ($result->num_rows > 0) {
 			    echo "<input type='radio' value='C' name='q".$row['id']."a' required>".$row['opt3'].".<br>";
 			    echo "<input type='radio' value='D' name='q".$row['id']."a' required>".$row['opt4'].".<br>";
 		echo  "</div></div></div>";
+
+	
 		
     } 
 } else {
