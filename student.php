@@ -30,6 +30,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
+//<!--Abu hanife nayem || abuhanife.nayem@gmail.com-->
 
 $sql = "SELECT id, ques, opt1, opt2, opt3, opt4 FROM questions4";
 
