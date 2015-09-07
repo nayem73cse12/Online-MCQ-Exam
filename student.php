@@ -67,7 +67,7 @@ $conn->close();
         <div align="center">
        <div  >
                 <p></p>       
-                <small class="copyright">Developed By <strong>Masiur Rahman Siddiki & Abu Hanife Nayem</strong></br> Department of <b style="color:black">C</b>omputer <b style="color:black">S</b>cience and <b style="color:black">E</b>ngineering, <b style="color:black">S</b>hahjalal <b style="color:black">U</b>niversity of <b style="color:black">S</b>cience and <b style="color:black">T</b>echnology, Sylhet</small>
+                <small class="copyright">Developed By <strong><a href="http://masiur.me">Masiur Rahman Siddiki</a> & Abu Hanife Nayem</strong></br> Department of <b style="color:black">C</b>omputer <b style="color:black">S</b>cience and <b style="color:black">E</b>ngineering, <b style="color:black">S</b>hahjalal <b style="color:black">U</b>niversity of <b style="color:black">S</b>cience and <b style="color:black">T</b>echnology, Sylhet</small>
 
       </div>
     </div>

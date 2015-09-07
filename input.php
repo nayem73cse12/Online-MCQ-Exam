@@ -29,3 +29,69 @@
 				opt1 VARCHAR(200),
 				correct_opt VARCHAR(30)
 			)";
+	if ($conn->query($sql) === TRUE) {
+    echo "";
+    } else {
+    echo "Error creating table: " . $conn->error;
+    }
+	
+	$sql = "SELECT  correct_opt FROM questions";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+    //   echo "<table><tr><th>ID</th><th>Questions</th><th>1st Option</th><th>2nd Option</th><th>3rd 		//	Option</th><th>4rth Option</th></tr>";
+    // output data of each row
+    $i=0;
+    while($row = $result->fetch_assoc()) {
+        
+        $i++;
+    	$qc[$i]=$row['correct_opt'];
+		
+    } 
+    } else {
+    echo "0 results";
+    }
+    
+	$qc1 = $qc[1]; 
+	$qc2 = $qc[2];
+	$qc3 = $qc[3];
+	$qc4 = $qc[4];
+	$qc5 = $qc[5];
+	$qc6 = $qc[6];
+	$qc7 = $qc[7];
+	$qc8 = $qc[8];
+	$qc9 = $qc[9];
+	$qc10 = $qc[10];
+    $sql3="INSERT INTO userans (user_ans,correct_opt)
+     VALUES ('$q1a','$qc1'),
+            ('$q2a','$qc2'),
+            ('$q3a','$qc3'),
+            ('$q4a','$qc4'),
+            ('$q5a','$qc5'),
+            ('$q6a','$qc6'),
+            ('$q7a','$qc7'),
+            ('$q8a','$qc8'),
+            ('$q9a','$qc9'),
+            ('$q10a','$qc10')";
+       if ($conn->query($sql3) === TRUE) {
+       echo "";
+       } else {
+       echo "Error: " . $sql3 . "<br>" . $conn->error;
+       }
+    $sql4 = "SELECT  user_ans,correct_opt FROM userans";
+    $result4 = $conn->query($sql4);
+    if ($result4->num_rows > 0) {
+    $i=0;
+    while($row = $result4->fetch_assoc()) {
+        
+       
+    	if($row['correct_opt']==$row['user_ans'])
+            $i++;
+		
+    } 
+    echo "<br>Mr $name you have got $i.";
+    } else {
+    echo "0 results";
+    }
+    
+    $conn->close();
+?>
