@@ -9,10 +9,10 @@
 <div class="container">
 <h2>Select Correct Answer from the Given Options</h2>
 <br><br>
-<form class="form-horizontal" method='post' action='input.php'>
+<form class="form-horizontal" method='post' action='result.php'>
     <div class="form-group has-success">
       <div class="col-xs-4">
-        <input type="text" class="form-control" id="name" name="user_name" placeholder="Enter Your Name">
+        <input type="text" class="form-control" id="name" name="user_name" placeholder="Enter Your Name" required>
       </div>
     </div>
     <br><br>
@@ -67,7 +67,7 @@ $conn->close();
         <div align="center">
        <div  >
                 <p></p>       
-                <small class="copyright">Developed By <strong><a href="http://masiur.me">Masiur Rahman Siddiki</a> & Abu Hanife Nayem</strong></br> Department of <b style="color:black">C</b>omputer <b style="color:black">S</b>cience and <b style="color:black">E</b>ngineering, <b style="color:black">S</b>hahjalal <b style="color:black">U</b>niversity of <b style="color:black">S</b>cience and <b style="color:black">T</b>echnology, Sylhet</small>
+                <small class="copyright">Developed By <strong ><a style="color:black"  href="http://masiur.me">Masiur Rahman Siddiki</a> & <a style="color:black"  href="http://facebook.com/abuhanif.nayem">Abu Hanife Nayem</a></strong></br> Department of <b style="color:black">C</b>omputer <b style="color:black">S</b>cience and <b style="color:black">E</b>ngineering, <b style="color:black">S</b>hahjalal <b style="color:black">U</b>niversity of <b style="color:black">S</b>cience and <b style="color:black">T</b>echnology, Sylhet</small>
 
       </div>
     </div>

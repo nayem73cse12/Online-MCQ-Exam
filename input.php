@@ -1,16 +1,16 @@
 <?php 
-	$name = $_POST['name'];
+	$name = $_POST['user_name'];
 	// correct asnwers taken from users
-	$q1c = $_POST['q1a'];
-	$q2c = $_POST['q2a'];
-	$q3c = $_POST['q3a'];
-	$q4c = $_POST['q4a'];
-	$q5c = $_POST['q5a'];
-	$q6c = $_POST['q6a'];
-	$q7c = $_POST['q7a'];
-	$q8c = $_POST['q8a'];
-	$q9c = $_POST['q9a'];
-	$q10c = $_POST['q10a'];
+	$q1a = $_POST['q1a'];
+	$q2a = $_POST['q2a'];
+	$q3a = $_POST['q3a'];
+	$q4a = $_POST['q4a'];
+	$q5a = $_POST['q5a'];
+	$q6a = $_POST['q6a'];
+	$q7a = $_POST['q7a'];
+	$q8a = $_POST['q8a'];
+	$q9a = $_POST['q9a'];
+	$q10a = $_POST['q10a'];
 
     $servername = "localhost";
 	$username = "root";
@@ -23,19 +23,28 @@
 	if ($conn->connect_error) {
 	    die("Connection failed: " . $conn->connect_error);
 	}
+
+	$sql5 = "DROP TABLE userans";
+ //   mysql_select_db( 'onlinemcq' );
+    if ($conn->query($sql5) === TRUE) {
+    echo "";
+    } else {
+    echo "Error deleting record: " . $conn->error;
+    }
+
+
 	$sql1 = "CREATE TABLE userans (
 				id INT(3) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
 				user_ans VARCHAR(4) NOT NULL,
-				opt1 VARCHAR(200),
-				correct_opt VARCHAR(30)
+				correct_opt VARCHAR(4) NOT NULL
 			)";
-	if ($conn->query($sql) === TRUE) {
+	if ($conn->query($sql1) === TRUE) {
     echo "";
     } else {
     echo "Error creating table: " . $conn->error;
     }
 	
-	$sql = "SELECT  correct_opt FROM questions";
+	$sql = "SELECT  correct_opt FROM questions4";
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
     //   echo "<table><tr><th>ID</th><th>Questions</th><th>1st Option</th><th>2nd Option</th><th>3rd 		//	Option</th><th>4rth Option</th></tr>";
@@ -87,8 +96,8 @@
     	if($row['correct_opt']==$row['user_ans'])
             $i++;
 		
-    } 
-    echo "<br>Mr $name you have got $i.";
+   		 } 
+   
     } else {
     echo "0 results";
     }
