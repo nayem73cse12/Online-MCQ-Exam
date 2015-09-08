@@ -73,7 +73,7 @@ if ($conn->query($sql) === TRUE) {
     echo "Error creating database: " . $conn->error;
 }
 */
-
+   // developed by Masiur Rahman Siddiki , mrsiddiki@gmail.com // sust cse 2012 batch
 // Database connection 
 
 $servername = "localhost";
